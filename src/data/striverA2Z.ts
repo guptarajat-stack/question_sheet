@@ -48,7 +48,7 @@ export const STRIVER_QUESTIONS: Question[] = (() => {
   const rows = parseCSV(STRIVER_CSV);
   if (rows.length <= 1) return [];
   const header = rows[0].map(h => h.toLowerCase());
-  const qNoIdx = header.indexOf('q.no');
+  const qNoIdx = header.indexOf('s.no') !== -1 ? header.indexOf('s.no') : header.indexOf('q.no');
   const topicIdx = header.indexOf('topic');
   const questionIdx = header.indexOf('question');
   const difficultyIdx = header.indexOf('difficulty');

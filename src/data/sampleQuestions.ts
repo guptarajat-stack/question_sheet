@@ -1326,7 +1326,8 @@ export const TOPICS = [
   "Binary Trees & BST",
   "Graphs",
   "Dynamic Programming",
-  "Tries"
+  "Tries",
+  "Strings Advanced"
 ];
 export const TOPICS_DEFAULT_CONFIG = TOPICS.reduce((acc, topic) => {
   acc[topic] = true;
